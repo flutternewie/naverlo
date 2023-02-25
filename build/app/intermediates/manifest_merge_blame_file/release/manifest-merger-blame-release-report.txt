@@ -1,0 +1,197 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.naverlo"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[:flutter_naver_login] C:\Users\kkm\Desktop\naverlo\build\flutter_naver_login\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-67
+11-->[:flutter_naver_login] C:\Users\kkm\Desktop\naverlo\build\flutter_naver_login\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[:flutter_naver_login] C:\Users\kkm\Desktop\naverlo\build\flutter_naver_login\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-79
+12-->[:flutter_naver_login] C:\Users\kkm\Desktop\naverlo\build\flutter_naver_login\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-76
+13
+14    <queries>
+14-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:13:5-23:15
+15
+16        <!-- 네이버앱 : 로그인, 스킴로그인 -->
+17        <package android:name="com.nhn.android.search" />
+17-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:16:9-58
+17-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:16:18-55
+18        <!-- 커스텀탭 로그인 -->
+19        <intent>
+19-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:18:9-20:18
+20            <action android:name="android.support.customtabs.action.CustomTabsService" />
+20-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:19:13-90
+20-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:19:21-87
+21        </intent>
+22
+23        <package android:name="com.android.chrome" />
+23-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:22:9-54
+23-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:22:18-51
+24    </queries>
+25
+26    <application
+27        android:name="android.app.Application"
+27-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:5:9-42
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.6.0] C:\Users\kkm\.gradle\caches\transforms-3\7e9df2ac2213a6bd3cef0f2f27870d79\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:6:9-43
+30        android:label="naverlo" >
+30-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:4:9-32
+31        <meta-data
+31-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:7:9-9:49
+32            android:name="com.naver.sdk.clientId"
+32-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:8:13-50
+33            android:value="@string/client_id" />
+33-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:9:13-46
+34        <meta-data
+34-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:10:9-12:53
+35            android:name="com.naver.sdk.clientSecret"
+35-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:11:13-54
+36            android:value="@string/client_secret" />
+36-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:12:13-50
+37        <meta-data
+37-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:13:9-15:51
+38            android:name="com.naver.sdk.clientName"
+38-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:14:13-52
+39            android:value="@string/client_name" />
+39-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:15:13-48
+40
+41        <activity
+41-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:17:9-38:20
+42            android:name="com.example.naverlo.MainActivity"
+42-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:19:13-41
+43            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+43-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:23:13-163
+44            android:exported="true"
+44-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:20:13-36
+45            android:hardwareAccelerated="true"
+45-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:24:13-47
+46            android:launchMode="singleTop"
+46-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:21:13-43
+47            android:theme="@style/LaunchTheme"
+47-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:22:13-47
+48            android:windowSoftInputMode="adjustResize" >
+48-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:25:13-55
+49
+50            <!--
+51                 Specifies an Android theme to apply to this Activity as soon as
+52                 the Android process has started. This theme is visible to the user
+53                 while the Flutter UI initializes. After that, this theme continues
+54                 to determine the Window background behind the Flutter UI.
+55            -->
+56            <meta-data
+56-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:30:13-33:19
+57                android:name="io.flutter.embedding.android.NormalTheme"
+57-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:31:17-72
+58                android:resource="@style/NormalTheme" />
+58-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:32:17-54
+59
+60            <intent-filter>
+60-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:34:13-37:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:35:17-68
+61-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:35:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:36:17-76
+63-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:36:27-74
+64            </intent-filter>
+65        </activity>
+66        <!--
+67             Don't delete the meta-data below.
+68             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+69        -->
+70        <meta-data
+70-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:41:9-43:33
+71            android:name="flutterEmbedding"
+71-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:42:13-44
+72            android:value="2" />
+72-->C:\Users\kkm\Desktop\naverlo\android\app\src\main\AndroidManifest.xml:43:13-30
+73        <!-- <activity -->
+74        <!-- android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity" -->
+75        <!-- android:configChanges="orientation|screenSize" -->
+76        <!-- android:theme="@style/Theme.AppCompat.Light.Dialog" /> -->
+77        <activity
+77-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:32:9-35:78
+78            android:name="com.navercorp.nid.oauth.NidOAuthBridgeActivity"
+78-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:33:13-74
+79            android:configChanges="orientation|screenSize"
+79-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:34:13-59
+80            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" />
+80-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:35:13-75
+81        <activity
+81-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:36:9-41:78
+82            android:name="com.navercorp.nid.oauth.activity.NidOAuthWebViewActivity"
+82-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:37:13-84
+83            android:configChanges="orientation|screenSize"
+83-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:38:13-59
+84            android:label="OAuth2.0 by WebView"
+84-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:39:13-48
+85            android:screenOrientation="behind"
+85-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:40:13-47
+86            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" />
+86-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:41:13-75
+87        <activity
+87-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:42:9-61:20
+88            android:name="com.navercorp.nid.oauth.activity.NidOAuthCustomTabActivity"
+88-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:43:13-86
+89            android:configChanges="orientation|screenSize"
+89-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:44:13-59
+90            android:exported="true"
+90-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:45:13-36
+91            android:label="OAuth2.0 by Custom tabs"
+91-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:46:13-52
+92            android:launchMode="singleTask"
+92-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:47:13-44
+93            android:screenOrientation="behind"
+93-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:48:13-47
+94            android:theme="@style/Theme.AppCompat.NoActionBar" >
+94-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:49:13-63
+95            <intent-filter>
+95-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:50:13-60:29
+96                <action android:name="android.intent.action.VIEW" />
+96-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:51:17-69
+96-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:51:25-66
+97
+98                <category android:name="android.intent.category.DEFAULT" />
+98-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:53:17-76
+98-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:53:27-73
+99                <category android:name="android.intent.category.BROWSABLE" />
+99-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:54:17-78
+99-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:54:27-75
+100                <!-- Intent URL 에서 로그인 액티비티를 실행하기 위해 설정 -->
+101                <data
+101-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:56:17-59:59
+102                    android:host="authorize"
+102-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:57:21-45
+103                    android:path="/"
+103-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:58:21-37
+104                    android:scheme="naver3rdpartylogin" />
+104-->[com.navercorp.nid:oauth:5.2.0] C:\Users\kkm\.gradle\caches\transforms-3\434b6b1628ffd5a4b09ed284ee6bb953\transformed\jetified-oauth-5.2.0\AndroidManifest.xml:59:21-56
+105            </intent-filter>
+106        </activity>
+107
+108        <uses-library
+108-->[androidx.window:window:1.0.0-beta04] C:\Users\kkm\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+109            android:name="androidx.window.extensions"
+109-->[androidx.window:window:1.0.0-beta04] C:\Users\kkm\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+110            android:required="false" />
+110-->[androidx.window:window:1.0.0-beta04] C:\Users\kkm\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+111        <uses-library
+111-->[androidx.window:window:1.0.0-beta04] C:\Users\kkm\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+112            android:name="androidx.window.sidecar"
+112-->[androidx.window:window:1.0.0-beta04] C:\Users\kkm\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+113            android:required="false" />
+113-->[androidx.window:window:1.0.0-beta04] C:\Users\kkm\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+114    </application>
+115
+116</manifest>
